@@ -1,0 +1,390 @@
+
+;; Customize user interface.
+(menu-bar-mode 0)
+(when (display-graphic-p)
+  (tool-bar-mode 0)
+  (scroll-bar-mode 0))
+(setq inhibit-startup-screen t)
+
+;; Write customizations to a separate file instead of this file.
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(load custom-file t)
+
+;; Load theme after custom.el to emacs wont freak out
+;;(load-theme 'doom-plain-dark t)
+;;(load-theme 'almost-mono-black t)
+(load-theme 'grb256 t) ;;custom theme
+
+;; Backup and Autosave Directories
+(setq temporary-file-directory "~/.tmp/")
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
+
+;; Use ESC as universal get me out of here command
+;;(define-key key-translation-map (kbd "ESC") (kbd "C-g"))
+
+
+;; Highlight matching pairs of parentheses.
+(setq show-paren-delay 0)
+(show-paren-mode)
+
+(defun show-paren--locate-near-paren-ad ()
+  "Locate an unescaped paren \"near\" point to show.
+If one is found, return the cons (DIR . OUTSIDE), where DIR is 1
+for an open paren, -1 for a close paren, and OUTSIDE is the buffer
+position of the outside of the paren.  Otherwise return nil."
+  (let* ((before (show-paren--categorize-paren (point))))
+    (when (or
+       (eq (car before) 1)
+       (eq (car before) -1))
+      before)))
+
+(advice-add 'show-paren--locate-near-paren :override #'show-paren--locate-near-paren-ad)
+
+(require 'paren)
+(set-face-background 'show-paren-match (face-background 'default))
+;;(set-face-foreground 'show-paren-match "#def")
+(set-face-attribute 'show-paren-match nil :weight 'extra-bold)
+
+
+;; Move file to trash instead of removing.
+(setq-default delete-by-moving-to-trash t)
+
+
+;; Use spaces, not tabs, for indentation.
+(setq-default indent-tabs-mode nil)
+
+;; Insane
+(defalias 'yes-or-no-p 'y-or-n-p)
+
+;; Set default font face
+;;(set-face-attribute 'default nil :font "Go Mono" :height 150)
+
+;; Package configs
+(require 'package)
+;; Dont check package signatures - this is stupid
+(setq package-check-signature nil)
+(setq package-enable-at-startup nil)
+(setq package-archives '(("org"       . "http://orgmode.org/elpa/")
+                         ("gnu"       . "http://elpa.gnu.org/packages/")
+                         ("melpa"     . "https://melpa.org/packages/")))
+(package-initialize)
+
+;; We will use 'use-package' to install and configure packages.
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+(eval-when-compile (require 'use-package))
+
+
+;; Packages
+
+;; Evil
+(unless (package-installed-p 'evil)
+  (package-install 'evil))
+
+;; Enable Evil
+(require 'evil)
+(evil-mode 0)
+
+;; Themes
+(use-package which-key :ensure t)
+(use-package doom-themes :ensure t)
+
+;; Other packages
+(use-package orderless :ensure t)
+
+(use-package treemacs
+  :ensure t
+  :defer t
+  :init
+  (with-eval-after-load 'winum
+    (define-key winum-keymap (kbd "M-0") #'treemacs-select-window))
+  :config
+  (progn
+    (setq treemacs-collapse-dirs                   (if treemacs-python-executable 3 0)
+          treemacs-deferred-git-apply-delay        0.5
+          treemacs-directory-name-transformer      #'identity
+          treemacs-display-in-side-window          t
+          ;;treemacs-eldoc-display                   'simple
+          treemacs-file-event-delay                5000
+          treemacs-file-extension-regex            treemacs-last-period-regex-value
+          treemacs-file-follow-delay               0.2
+          treemacs-file-name-transformer           #'identity
+          treemacs-follow-after-init               t
+          treemacs-expand-after-init               t
+          treemacs-find-workspace-method           'find-for-file-or-pick-first
+          treemacs-git-command-pipe                ""
+          treemacs-goto-tag-strategy               'refetch-index
+          treemacs-max-git-entries                 5000
+          treemacs-missing-project-action          'ask
+          treemacs-move-forward-on-expand          nil
+          treemacs-no-png-images                   nil
+          treemacs-no-delete-other-windows         t
+          treemacs-project-follow-cleanup          nil
+          treemacs-persist-file                    (expand-file-name ".cache/treemacs-persist" user-emacs-directory)
+          treemacs-position                        'left
+          treemacs-read-string-input               'from-child-frame
+          treemacs-recenter-distance               0.1
+          treemacs-recenter-after-file-follow      nil
+          treemacs-recenter-after-tag-follow       nil
+          treemacs-recenter-after-project-jump     'always
+          treemacs-recenter-after-project-expand   'on-distance
+          treemacs-litter-directories              '("/node_modules" "/.venv" "/.cask")
+          treemacs-show-cursor                     nil
+          treemacs-show-hidden-files               t
+          treemacs-silent-filewatch                nil
+          treemacs-silent-refresh                  nil
+          treemacs-sorting                         'alphabetic-asc
+          treemacs-select-when-already-in-treemacs 'move-back
+          treemacs-space-between-root-nodes        t
+          treemacs-tag-follow-cleanup              t
+          treemacs-tag-follow-delay                1.5
+          treemacs-text-scale                      nil
+          treemacs-user-mode-line-format           nil
+          treemacs-user-header-line-format         nil
+          treemacs-wide-toggle-width               70
+          treemacs-width                           35
+          treemacs-width-increment                 1
+          treemacs-width-is-initially-locked       t
+          treemacs-workspace-switch-cleanup        nil)
+
+    ;; The default width and height of the icons is 22 pixels. If you are
+    ;; using a Hi-DPI display, uncomment this to double the icon size.
+    ;;(treemacs-resize-icons 44)
+
+    (treemacs-follow-mode t)
+    (treemacs-filewatch-mode t)
+    (treemacs-fringe-indicator-mode 'always)
+    (when treemacs-python-executable
+      (treemacs-git-commit-diff-mode t))
+
+    (pcase (cons (not (null (executable-find "git")))
+                 (not (null treemacs-python-executable)))
+      (`(t . t)
+       (treemacs-git-mode 'deferred))
+      (`(t . _)
+       (treemacs-git-mode 'simple)))
+
+    (treemacs-hide-gitignored-files-mode nil))
+  :bind
+  (:map global-map
+        ("M-0"       . treemacs-select-window)
+        ("C-x t 1"   . treemacs-delete-other-windows)
+        ("C-x t t"   . treemacs)
+        ("C-x t d"   . treemacs-select-directory)
+        ("C-x t B"   . treemacs-bookmark)
+        ("C-x t C-t" . treemacs-find-file)
+        ("C-x t M-t" . treemacs-find-tag)))
+
+(use-package treemacs-tab-bar ;;treemacs-tab-bar if you use tab-bar-mode
+  :after (treemacs)
+  :ensure t
+  :config (treemacs-set-scope-type 'Tabs))
+
+
+;; open buffers in new tab not new window
+(setq pop-up-frames t)
+;;(setq display-buffer-base-action '(display-buffer-in-new-tab))
+
+
+;; Enable tab-bar-mode
+(global-tab-line-mode t) ;;makes buffers to tabs -- for noobs
+(setq tab-line-new-button-show nil)  ;; do not show add-new button
+(setq tab-line-close-button-show nil)  ;; do not show close button
+(setq tab-line-separator "")  ;; set it to empty
+
+;; Fix scroll behaviour
+(setq scroll-conservatively 101)
+
+;; Set default font face
+(set-face-attribute 'default nil :font "Go Mono" :height 150)
+
+;; tab color settings
+(set-face-attribute 'tab-line-tab nil ;; active tab in another window
+      :inherit 'tab-line
+      :foreground "gray40" :background "gray20" :box nil)
+(set-face-attribute 'tab-line-tab-current nil ;; active tab in current window
+      :background "#000000" :foreground "white" :box nil)
+(set-face-attribute 'tab-line-tab-inactive nil ;; inactive tab
+      :background "white" :foreground "black" :box nil)
+(set-face-attribute 'tab-line-highlight nil ;; mouseover
+      :background "white" :foreground 'unspecified)
+
+
+;; Show vi-like tilde in the fringe on empty lines.
+(use-package vi-tilde-fringe
+  :ensure t
+  :config
+  (global-vi-tilde-fringe-mode 1))
+
+
+;; Move-text lines around with meta-up/down.
+(use-package move-text
+  :ensure t
+  :config
+  (move-text-default-bindings))
+
+;; Enable rainbow delimiters in prog buffers
+(use-package rainbow-delimiters :ensure t)
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
+
+;; Never use tabs, use spaces instead.
+(setq tab-width 2)
+(setq js-indent-level 2)
+(setq css-indent-offset 2)
+(setq c-basic-offset 2)
+(setq-default indent-tabs-mode nil)
+(setq-default c-basic-offset 2)
+(setq-default tab-width 2)
+(setq-default c-basic-indent 2)
+
+;; set save location
+(setq backup-directory-alist `(("." . "~/.emacs.d/saves")))
+
+;; Start packages
+(which-key-mode)
+
+;; Fancy titlebar for MacOS
+(add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
+(add-to-list 'default-frame-alist '(ns-appearance . dark))
+(setq ns-use-proxy-icon nil)
+(setq frame-title-format nil)
+
+;; Completion framework
+(unless (package-installed-p 'vertico)
+  (package-install 'vertico))
+
+;; Enable completion by narrowing
+;; M-x etc..
+(vertico-mode t)
+
+
+;; Optionally use the `orderless' completion style.
+(use-package orderless
+:init
+(setq completion-styles '(orderless basic)
+    completion-category-defaults nil
+    completion-category-overrides '((file (styles partial-completion)))))
+
+
+;;; Extended completion utilities
+(unless (package-installed-p 'consult)
+  (package-install 'consult))
+(global-set-key [rebind switch-to-buffer] #'consult-buffer)
+(setq read-buffer-completion-ignore-case t
+      read-file-name-completion-ignore-case t
+      completion-ignore-case t)
+
+;; Enable line numbering by default
+(global-display-line-numbers-mode t)
+;;(global-linum-mode t)
+
+;; Disable line-numbers minor mode for neotree
+;;(add-hook 'neo-after-create-hook (lambda (&optional dummy) (display-line-numbers-mode -1)))
+
+;;; LSP Support
+(unless (package-installed-p 'eglot)
+  (package-install 'eglot))
+(setq eldoc-echo-area-use-multiline-p nil)
+
+
+;; Enable LSP support by default in programming buffers
+(add-hook 'prog-mode-hook #'eglot-ensure)
+
+;;; Pop-up auto-completion
+(unless (package-installed-p 'company)
+  (package-install 'company))
+
+;;
+;; Enable Company by default in programming buffers
+(add-hook 'prog-mode-hook #'company-mode)
+
+;; Miscellaneous options
+(setq-default major-mode
+              (lambda () ; guess major mode from file name
+                (unless buffer-file-name
+                  (let ((buffer-file-name (buffer-name)))
+                    (set-auto-mode)))))
+(setq confirm-kill-emacs #'yes-or-no-p)
+(setq window-resize-pixelwise t)
+(setq frame-resize-pixelwise t)
+(save-place-mode t)
+(savehist-mode t)
+(recentf-mode t)
+(defalias 'yes-or-no #'y-or-n-p)
+
+
+;; Customize Rainbow Delimiters.
+;;(require 'rainbow-delimiters)
+;;(set-face-foreground 'rainbow-delimiters-depth-1-face "#c66")  ; red
+;;(set-face-foreground 'rainbow-delimiters-depth-2-face "#6c6")  ; green
+;;(set-face-foreground 'rainbow-delimiters-depth-3-face "#69f")  ; blue
+;;(set-face-foreground 'rainbow-delimiters-depth-4-face "#cc6")  ; yellow
+;;(set-face-foreground 'rainbow-delimiters-depth-5-face "#6cc")  ; cyan
+;;(set-face-foreground 'rainbow-delimiters-depth-6-face "#c6c")  ; magenta
+;;(set-face-foreground 'rainbow-delimiters-depth-7-face "#ccc")  ; light gray
+;;(set-face-foreground 'rainbow-delimiters-depth-8-face "#999")  ; medium gray
+;;(set-face-foreground 'rainbow-delimiters-depth-9-face "#666")  ; dark gray
+
+;; Main keybindings //github ...
+;; https://gist.github.com/dmitriyK1/d21cde56d062eeb4d5f220145b489a63
+(use-package general :ensure t
+            :config (general-define-key
+                      :states '(normal visual insert emacs)
+                      :prefix "SPC"
+                      :non-normal-prefix "M-SPC"
+                      "/"   '(counsel-rg :which-key "ripgrep")
+                      "TAB" '(switch-to-prev-buffer :which-key "previous buffer")
+                      "SPC" '(helm-M-x :which-key "M-x")
+                      "pf"  '(helm-find-file :which-key "find files")
+          ;; Buffers
+                      "bb"  '(helm-buffers-list :which-key "buffers list")
+                      ;; Window
+                      "wl"  '(windmove-right :which-key "move right")
+                      "wh"  '(windmove-left :which-key "move left")
+                      "wk"  '(windmove-up :which-key "move up")
+                      "wj"  '(windmove-down :which-key "move bottom")
+          "w/"  '(split-window-right :which-key "split right")
+          "w-"  '(split-window-below :which-key "split bottom")
+          "wx"  '(delete-window :which-key "delete window")
+          ;; Others
+          "at"  '(ansi-term :which-key "open terminal")
+                      ))
+
+;; WindMove keybinds
+(global-set-key (kbd "C-c <left>")  'windmove-left)
+(global-set-key (kbd "C-c <right>") 'windmove-right)
+(global-set-key (kbd "C-c <up>")    'windmove-up)
+(global-set-key (kbd "C-c <down>")  'windmove-down)
+
+;; dired keybinds
+(use-package dired-sidebar
+  :ensure t
+  :commands (dired-sidebar-toggle-sidebar)
+  :init
+  (add-hook 'dired-sidebar-mode-hook
+            (lambda ()
+              (unless (file-remote-p default-directory)
+                (auto-revert-mode))))
+  :config
+  (push 'toggle-window-split dired-sidebar-toggle-hidden-commands)
+  (push 'rotate-windows dired-sidebar-toggle-hidden-commands)
+  (setq dired-sidebar-subtree-line-prefix "__")
+  (setq dired-sidebar-use-term-integration t)
+  (setq dired-use-ls-dired nil)
+  )
+
+(global-set-key (kbd "C-c d")  'dired-sidebar-toggle-sidebar)
+
+;; Org-mode
+(setq org-support-shift-select 'always)
+
+
+
+;; First window is recently opened files -- sort of like dashboard
+(recentf-open-files)

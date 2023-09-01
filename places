@@ -1,0 +1,403 @@
+;;; -*- coding: utf-8; mode: lisp-data -*-
+(("/Users/getz/Documents/Courses/EDAF80/Labs/lab1/code/src/EDAF80/assignment1.cpp" . 12427)
+ ("/Users/getz/Documents/Courses/EDAF80/Labs/lab1/code/"
+  (dired-filename . "/Users/getz/Documents/Courses/EDAF80/Labs/lab1"))
+ ("/Users/getz/Documents/Courses/EDAF80/Labs/"
+  (dired-filename . "/Users/getz/Documents/Courses/EDAF80/Labs/lab1"))
+ ("/Users/getz/Documents/Courses/EDAF80/Labs/lab1/code/src/"
+  (dired-filename . "/Users/getz/Documents/Courses/EDAF80/Labs/lab1/code/src/EDAF80"))
+ ("/Users/getz/Documents/Courses/EDAF80/Labs/lab1/code/src/EDAF80/"
+  (dired-filename . "/Users/getz/Documents/Courses/EDAF80/Labs/lab1/code/src/EDAF80/assignment1.cpp"))
+ ("/Users/getz/Documents/Courses/EDAF80/Labs/lab1/code/src/EDAF80/CelestialBody.cpp" . 24)
+ ("/Users/getz/Documents/Courses/EDAF80/Labs/lab1/"
+  (dired-filename . "/Users/getz/Documents/Courses/EDAF80/Labs/lab1/assignment1.cpp"))
+ ("/Users/getz/Documents/Courses/EDAF80/Labs/lab1/assignment1.cpp" . 12733)
+ ("/Users/getz/Documents/Courses/EDAF80/code/"
+  (dired-filename . "/Users/getz/Documents/Courses/EDAF80"))
+ ("/Users/getz/bin/"
+  (dired-filename . "/Users/getz"))
+ ("/Users/getz/.config/"
+  (dired-filename . "/Users/getz"))
+ ("/Users/getz/.emacs.d/"
+  (dired-filename . "/Users/getz/.emacs.d/init.el"))
+ ("/Users/getz/"
+  (dired-filename . "/Users/getz/Documents"))
+ ("/Users/getz/Documents/"
+  (dired-filename . "/Users/getz/Documents/Courses"))
+ ("/Users/getz/Documents/Courses/"
+  (dired-filename . "/Users/getz/Documents/Courses/EDAF80"))
+ ("/Users/getz/.emacs.d/init.el" . 5040)
+ ("/Users/getz/Documents/Courses/EDAF80/Labs/lab1/code/src/EDAF80/CMakeLists.txt" . 255)
+ ("/Users/getz/Documents/Courses/EDAF80/code/src/EDAF80/CelestialBody.hpp" . 3358)
+ ("/Users/getz/Documents/Courses/EDAF80/code/src/EDAF80/CelestialBody.cpp" . 1345)
+ ("/Users/getz/Documents/Courses/EDAF80/code/src/core/FPSCamera.h" . 1887)
+ ("/Users/getz/Documents/Courses/EDAF80/code/src/EDAF80/assignment1.cpp" . 11309)
+ ("/Users/getz/Documents/Courses/EDAF80/code/CMakeLists.txt" . 75)
+ ("/Users/getz/Documents/Courses/EDAF80/code/src/EDAF80/"
+  (dired-filename . "/Users/getz/Documents/Courses/EDAF80/code/src/EDAF80/assignment1.cpp"))
+ ("/Users/getz/Library/Preferences/com.codeweavers.CrossOver.plist" . 13159)
+ ("/Users/getz/Developer/RE/findrealkey/keygen/keygen.c" . 564)
+ ("/Users/getz/Developer/"
+  (dired-filename . "/Users/getz/Developer/RE"))
+ ("/Users/getz/Developer/RE/SimpleKeyGen/mykeygen/"
+  (dired-filename . "/Users/getz/Developer/RE/SimpleKeyGen"))
+ ("/Users/getz/Developer/RE/SimpleKeyGen/"
+  (dired-filename . "/Users/getz/Developer/RE"))
+ ("/Users/getz/Developer/RE/"
+  (dired-filename . "/Users/getz/Developer/RE/findrealkey"))
+ ("/Users/getz/Developer/RE/findrealkey/"
+  (dired-filename . "/Users/getz/Developer/RE/findrealkey/findkeyproj.lock"))
+ ("/Users/getz/Developer/RE/SimpleKeyGen/mykeygen/keygen.c" . 388)
+ ("/Users/getz/Developer/RE/findrealkey/keygen/"
+  (dired-filename . "/Users/getz/Developer/RE/findrealkey/keygen/keygen.c"))
+ ("/Applications/Emacs.app/Contents/Resources/"
+  (dired-filename . "/Applications/Emacs.app/Contents"))
+ ("/Applications/Emacs.app/Contents/"
+  (dired-filename . "/Applications/Emacs.app"))
+ ("/Applications/Emacs.app/"
+  (dired-filename . "/Applications/Emacs.app/Contents"))
+ ("/Users/getz/Downloads/"
+  (dired-filename . "/Users/getz/Downloads/readme.txt"))
+ ("/Applications/"
+  (dired-filename . "/Applications/Emacs.app"))
+ ("/"
+  (dired-filename . "/Users"))
+ ("/Users/"
+  (dired-filename . "/Users/getz"))
+ ("/Library/"
+  (dired-filename . "/Library/Apple"))
+ ("/System/"
+  (dired-filename . "/System/Applications"))
+ ("/Volumes/"
+  (dired-filename . "/Volumes/Data"))
+ ("/bin/"
+  (dired-filename . "/bin/["))
+ ("/Users/getz/Desktop/"
+  (dired-filename . "/Users/getz/Desktop/Applications"))
+ ("/Users/getz/.emacs.d/theo" . 33315)
+ ("/Users/getz/Documents/Courses/Old/ETSF15 - Komsys/Skeleton_v21.1/"
+  (dired-filename . "/Users/getz/Documents/Courses/Old/ETSF15 - Komsys"))
+ ("/Users/getz/Documents/Courses/Old/ETSF15 - Komsys/"
+  (dired-filename . "/Users/getz/Documents/Courses/Old/ETSF15 - Komsys/ALOHA"))
+ ("/Users/getz/Documents/Courses/Old/ETSF15 - Komsys/Skeleton_v21.1/Skeleton_v21.1.cpp" . 141)
+ ("/Users/getz/Documents/Courses/Old/ETSF15 - Komsys/Skeleton_v21.1/datacommsimlib.cpp" . 5566)
+ ("/Users/getz/Documents/Courses/Old/ETSF15 - Komsys/Labs/Lab2/Skeleton_V21.1/Skeleton_v21.1.cpp" . 314)
+ ("/Users/getz/Documents/Courses/Old/ETSF15 - Komsys/Labs/Lab2/Skeleton_V21.1/datacommsimlib.h" . 193)
+ ("/Users/getz/Developer/AdvancedUPE/apue-code/11/Makefile" . 1299)
+ ("/Users/getz/Documents/Courses/Old/ETSF15 - Komsys/Labs/Lab2/Skeleton_V21.1/Skeleton_v21.1.ino" . 328)
+ ("/Users/getz/Developer/cheribsd/"
+  (dired-filename . "/Users/getz/Developer/cheribsd/COPYRIGHT"))
+ ("/Users/getz/Developer/cheribsd/usr.bin/elfdump/elfdump.c" . 1516)
+ ("/Users/getz/Developer/cheribsd/crypto/openssh/"
+  (dired-filename . "/Users/getz/Developer/cheribsd/crypto/openssh/defines.h"))
+ ("/Users/getz/Developer/cheribsd/crypto/openssh/defines.h" . 16083)
+ ("/Users/getz/Developer/cheribsd/sys/cheri/"
+  (dired-filename . "/Users/getz/Developer/cheribsd/sys/cheri/cheri_cap_relocs.c"))
+ ("/Users/getz/Developer/cheribsd/sys/cheri/cheri_cap_relocs.c" . 3189)
+ ("/Users/getz/Developer/cheribsd/contrib/subrepo-cheri-libunwind/src/DwarfParser.hpp" . 8883)
+ ("/ssh:netbsd:/home/getz/apue-code/" . 37)
+ ("/ssh:netbsd:/home/getz/apue-code/08/command.c" . 1765)
+ ("/Users/getz/Developer/RE/test.cpp" . 74)
+ ("/ssh:netbsd:/home/getz/apue-code/08/"
+  (dired-filename . "/ssh:netbsd:/home/getz/apue-code/08/command.c"))
+ ("/ssh:netbsd:/home/getz/apue-code/01/"
+  (dired-filename . "/ssh:netbsd:/home/getz/apue-code/01/pid.c"))
+ ("/ssh:netbsd:/home/getz/"
+  (dired-filename . "/ssh:netbsd:/home/getz/apue-code"))
+ ("/ssh:netbsd:/home/getz/apue-code/02/"
+  (dired-filename . "/ssh:netbsd:/home/getz/apue-code/02/Makefile"))
+ ("/ssh:netbsd:/home/getz/apue-code/03/"
+  (dired-filename . "/ssh:netbsd:/home/getz/apue-code/03/chown.c"))
+ ("/ssh:netbsd:/home/getz/apue-code/04/"
+  (dired-filename . "/ssh:netbsd:/home/getz/apue-code/04/cd.c"))
+ ("/ssh:netbsd:/home/getz/apue-code/05/"
+  (dired-filename . "/ssh:netbsd:/home/getz/apue-code/05/Makefile"))
+ ("/ssh:netbsd:/home/getz/apue-code/07/"
+  (dired-filename . "/ssh:netbsd:/home/getz/apue-code/07/eintr.c"))
+ ("/ssh:netbsd:/home/getz/apue-code/04/lns.c" . 765)
+ ("/Users/getz/Virtual/"
+  (dired-filename . "/Users/getz/Virtual/ISO"))
+ ("/ssh:netbsd:/home/getz/apue-code/04/rename.c" . 765)
+ ("/ssh:netbsd:/home/getz/apue-code/04/sizeof.c" . 1647)
+ ("/ssh:netbsd:/home/getz/apue-code/08/shmdemo.c" . 1361)
+ ("/ssh:netbsd:/home/getz/.bashrc" . 2718)
+ ("/ssh:netbsd:/home/"
+  (dired-filename . "/ssh:netbsd:/home/getz"))
+ ("/ssh:netbsd:/home/getz/.byobu/"
+  (dired-filename . "/ssh:netbsd:/home/getz/.byobu/backend"))
+ ("/ssh:netbsd:/home/getz/plan9port/"
+  (dired-filename . "/ssh:netbsd:/home/getz/plan9port/CHANGES"))
+ ("/ssh:envs:/home/getz/"
+  (dired-filename . "/ssh:envs:/home/getz/emacs4cl.lisp"))
+ ("/ssh:envs:/home/getz/emacs4cl.lisp" . 57)
+ ("/Users/getz/Developer/rustlings/exercises/hashmaps/hashmaps3.rs" . 813)
+ ("/Users/getz/.zshrc" . 598)
+ ("/Users/getz/.emacs.d/my-dashboard.el" . 1191)
+ ("/Users/getz/.emacs.d/eshell/"
+  (dired-filename . "/Users/getz/.emacs.d/eshell/alias"))
+ ("/Users/getz/.emacs.d/eshell/alias" . 179)
+ ("/Users/getz/.profile" . 105)
+ ("/Users/getz/Pictures/"
+  (dired-filename . "/Users/getz/Pictures/1655311525_MrKrotchyGary20.png"))
+ ("/Users/getz/Nextcloud/"
+  (dired-filename . "/Users/getz/Nextcloud/Programming"))
+ ("/Users/getz/Developer/AdvancedUPE/apue-code/03/"
+  (dired-filename . "/Users/getz/Developer/AdvancedUPE/apue-code/03/myuids.c"))
+ ("/Users/getz/Developer/AdvancedUPE/apue-code/03/myuids.c" . 480)
+ ("/Users/getz/Library/"
+  (dired-filename . "/Users/getz/Library/Accounts"))
+ ("/Users/getz/MATLAB/"
+  (dired-filename . "/Users/getz/MATLAB/Projects"))
+ ("/Users/getz/Movies/"
+  (dired-filename . "/Users/getz/Movies/16653181148180.mp4"))
+ ("/Users/getz/Music/"
+  (dired-filename . "/Users/getz/Music/Ableton"))
+ ("/Users/getz/Documents/Courses/RIS - IEEE/"
+  (dired-filename . "/Users/getz/Documents/Courses/RIS - IEEE/bilder"))
+ ("/Users/getz/Developer/AdvancedUPE/"
+  (dired-filename . "/Users/getz/Developer/AdvancedUPE/apue-code"))
+ ("/Users/getz/Developer/AdvancedUPE/apue-code/"
+  (dired-filename . "/Users/getz/Developer/AdvancedUPE/apue-code/03"))
+ ("/Users/getz/Public/"
+  (dired-filename . "/Users/getz/Public/Drop Box"))
+ ("/Users/getz/Documents/Courses/Old/"
+  (dired-filename . "/Users/getz/Documents/Courses/Old/EITA35"))
+ ("/Users/getz/Documents/Courses/RIS - IEEE/trash/"
+  (dired-filename . "/Users/getz/Documents/Courses/RIS - IEEE/trash/41.pdf"))
+ ("/Users/getz/Documents/Courses/RIS - IEEE/source/"
+  (dired-filename . "/Users/getz/Documents/Courses/RIS - IEEE/source/2103.00534 2 2"))
+ ("/Users/getz/Documents/Courses/RIS - IEEE/bilder/"
+  (dired-filename . "/Users/getz/Documents/Courses/RIS - IEEE/bilder/perspective.jpeg"))
+ ("/Users/getz/Documents/Courses/OFFBEAT COMPUTING CLUB/"
+  (dired-filename . "/Users/getz/Documents/Courses/OFFBEAT COMPUTING CLUB/Highlight - CSES Problem Solving Club - Meetup #1 - Weird Algorithm, Missing Number, Repetitions, Increasing Array [v1181719786].mp4"))
+ ("/Users/getz/Documents/Courses/IDrive/"
+  (dired-filename . "/Users/getz/Documents/Courses/IDrive/Gemensam Pluggdrive för I"))
+ ("/Users/getz/Documents/Courses/Github/"
+  (dired-filename . "/Users/getz/Documents/Courses/Github/Reference_Material-Equation_Sheets"))
+ ("/Users/getz/Documents/Courses/FAFA01/"
+  (dired-filename . "/Users/getz/Documents/Courses/FAFA01/Exempeltenta_1.pdf"))
+ ("/Users/getz/Developer/Shit/"
+  (dired-filename . "/Users/getz/Developer/Shit/sixnine.c"))
+ ("/Users/getz/Developer/Rust/"
+  (dired-filename . "/Users/getz/Developer/Rust/kahansum"))
+ ("/Users/getz/Developer/Python/"
+  (dired-filename . "/Users/getz/Developer/Python/Environments"))
+ ("/Users/getz/Developer/AdvancedUPE/apue-code/01/"
+  (dired-filename . "/Users/getz/Developer/AdvancedUPE/apue-code/01/fetch-sources.sh"))
+ ("/Users/getz/Developer/AdvancedUPE/apue-code/02/"
+  (dired-filename . "/Users/getz/Developer/AdvancedUPE/apue-code/02/Makefile"))
+ ("/Users/getz/Developer/Shit/sixnine.c" . 158)
+ ("/Users/getz/Applications/"
+  (dired-filename . "/Users/getz/Applications/Autodesk Fusion 360 Service Utility.app"))
+ ("/Users/getz/Documents/Books/"
+  (dired-filename . "/Users/getz/Documents/Books/Analog Electronics"))
+ ("/Users/getz/Developer/TinyC/tinyc.c" . 152)
+ ("/Users/getz/Developer/TinyC/"
+  (dired-filename . "/Users/getz/Developer/TinyC/tinyc.c"))
+ ("/Users/getz/Developer/Shit/crc/"
+  (dired-filename . "/Users/getz/Developer/Shit/crc/Makefile"))
+ ("/Users/getz/Developer/Shit/params/"
+  (dired-filename . "/Users/getz/Developer/Shit/params/a.out"))
+ ("/Users/getz/Developer/Shit/quinesnake/"
+  (dired-filename . "/Users/getz/Developer/Shit/quinesnake/LICENSE"))
+ ("/Users/getz/Developer/Shit/st/"
+  (dired-filename . "/Users/getz/Developer/Shit/st/Makefile"))
+ ("/Users/getz/Developer/Shit/test/"
+  (dired-filename . "/Users/getz/Developer/Shit/test/lol"))
+ ("/Users/getz/Zotero/"
+  (dired-filename . "/Users/getz/Zotero/locate"))
+ ("/Users/getz/Virtual/ISO/"
+  (dired-filename . "/Users/getz/Virtual/ISO/22621.1.220506-1250.NI_RELEASE_CLIENTPRO_OEMRET_A64FRE_EN-US.ISO"))
+ ("/Users/getz/Virtual/NetBSD Aarch64.utm/"
+  (dired-filename . "/Users/getz/Virtual/NetBSD Aarch64.utm/Data"))
+ ("/Users/Shared/"
+  (dired-filename . "/Users/Shared/Epic Games"))
+ ("/Users/getz/Developer/wio/"
+  (dired-filename . "/Users/getz/Developer/wio/LICENSE"))
+ ("/Users/getz/Developer/steamgamecrack/"
+  (dired-filename . "/Users/getz/Developer/steamgamecrack/Getting Over It"))
+ ("/Users/getz/Developer/posters/"
+  (dired-filename . "/Users/getz/Developer/posters/70920933-3db99600-201b-11ea-8d4f-cbeade6626b7.png"))
+ ("/Users/getz/Developer/homepWEBSITE/"
+  (dired-filename . "/Users/getz/Developer/homepWEBSITE/htmlbackup"))
+ ("/Users/getz/Developer/git/"
+  (dired-filename . "/Users/getz/Developer/git/IHaskell"))
+ ("/Users/getz/Developer/rustlings/exercises/"
+  (dired-filename . "/Users/getz/Developer/rustlings/exercises/hashmaps"))
+ ("/Users/getz/Developer/rustlings/"
+  (dired-filename . "/Users/getz/Developer/rustlings/exercises"))
+ ("/Users/getz/Developer/rustlings/exercises/hashmaps/"
+  (dired-filename . "/Users/getz/Developer/rustlings/exercises/hashmaps/hashmaps3.rs"))
+ ("/Users/getz/.emacs.d/elpa/evil-20230622.715/evil-core.el" . 11368)
+ ("/opt/homebrew/Cellar/emacs-plus@30/30.0.50/share/emacs/30.0.50/lisp/files.el" . 43026)
+ ("/Users/getz/.emacs.d/elpa/counsel-20230619.1623/"
+  (dired-filename . "/Users/getz/.emacs.d/elpa"))
+ ("/Users/getz/.emacs.d/elpa/"
+  (dired-filename . "/Users/getz/.emacs.d"))
+ ("/Users/getz/.emacs.d/elpa/counsel-20230619.1623/counsel.el" . 178962)
+ ("/Users/getz/Developer/AdvancedUPE/apue-code/11/hello.c" . 1155)
+ ("//"
+  (dired-filename . "/"))
+ ("/Users/getz/Developer/AdvancedUPE/apue-code/11/"
+  (dired-filename . "/Users/getz/Developer/AdvancedUPE/apue-code"))
+ ("/Users/getz/Developer/rustlings/exercises/lifetimes/"
+  (dired-filename . "/Users/getz/Developer/rustlings/exercises"))
+ ("/Users/getz/Developer/rustlings/exercises/structs/"
+  (dired-filename . "/Users/getz/Developer/rustlings/exercises/structs/structs1.rs"))
+ ("/Users/getz/Developer/rustlings/exercises/structs/structs1.rs" . 684)
+ ("/Users/getz/Developer/Shit/quinesnake/quinesnake.cpp" . 250)
+ ("/Users/getz/Developer/Tutorials-master/master0Fnone_classes/1_x86_Demystified/"
+  (dired-filename . "/Users/getz/Developer/Tutorials-master/master0Fnone_classes"))
+ ("/Users/getz/Developer/Tutorials-master/master0Fnone_classes/"
+  (dired-filename . "/Users/getz/Developer/Tutorials-master"))
+ ("/Users/getz/Developer/Tutorials-master/"
+  (dired-filename . "/Users/getz/Developer"))
+ ("/Users/getz/.config/yabai/"
+  (dired-filename . "/Users/getz/.config/yabai/yabairc"))
+ ("/Users/getz/Developer/Tutorials-master/master0Fnone_classes/1_x86_Demystified/practice/practice.c" . 2150)
+ ("/Users/getz/Developer/Tutorials-master/master0Fnone_classes/1_x86_Demystified/practice/"
+  (dired-filename . "/Users/getz/Developer/Tutorials-master/master0Fnone_classes/1_x86_Demystified"))
+ ("/Users/getz/.config/yabai/yabairc" . 1241)
+ ("/Users/getz/Developer/Tutorials-master/hacking_weaponizing_solitaire/cards_dll_proxy/"
+  (dired-filename . "/Users/getz/Developer/Tutorials-master/hacking_weaponizing_solitaire/cards_dll_proxy/cards_proxy.cpp"))
+ ("/ssh:envs:/home/getz/.byobu/"
+  (dired-filename . "/ssh:envs:/home/getz"))
+ ("/ssh:envs:/home/getz/.emacs" . 156)
+ ("/scp:envs:/home/getz/.emacs.d/"
+  (dired-filename . "/scp:envs:/home/getz/.emacs.d/custom.el"))
+ ("/scp:envs:/home/getz/.emacs.d/custom.el" . 246)
+ ("/scp:envs:/home/getz/emacs4cl.lisp" . 31)
+ ("/scp:envs:/home/getz/~whalesalad" . 224)
+ ("/scp:envs:/home/getz/public_html/mathematica/index.html" . 6539)
+ ("/scp:envs:/home/getz/public_html/blog/.config" . 181)
+ ("/scp:envs:/home/getz/"
+  (dired-filename . "/scp:envs:/home/getz/public_gemini"))
+ ("/scp:envs:/home/getz/mylayout.kmap" . 15)
+ ("/Users/getz/Developer/cheribsd/crypto/openssh/addr.c" . 4316)
+ ("/Users/getz/Developer/wio/main.c" . 8224)
+ ("/Users/getz/.mkshrc" . 2)
+ ("/Users/getz/.condarc" . 11)
+ ("/Users/getz/Developer/rustlings/exercises/enums/enums1.rs" . 14)
+ ("/Users/getz/Developer/rustlings/exercises/functions/functions1.rs" . 135)
+ ("/Users/getz/Developer/rustlings/exercises/traits/traits1.rs" . 489)
+ ("/Users/getz/Developer/rustlings/exercises/traits/"
+  (dired-filename . "/Users/getz/Developer/rustlings/exercises/traits/traits1.rs"))
+ ("/scp:envs:/home/getz/public_html/"
+  (dired-filename . "/scp:envs:/home/getz/public_html/index.php"))
+ ("/scp:envs:/home/getz/public_html/index.php" . 444)
+ ("/Users/getz/Developer/rustlings/exercises/modules/modules3.rs" . 656)
+ ("/Users/getz/Developer/rustlings/exercises/modules/"
+  (dired-filename . "/Users/getz/Developer/rustlings/exercises/modules/modules3.rs"))
+ ("/Users/getz/Developer/cheribsd/sys/cheri/cheri_otype.c" . 2285)
+ ("/Users/getz/Developer/Rust/kahansum/src/"
+  (dired-filename . "/Users/getz/Developer/Rust/kahansum/src/main.rs"))
+ ("/Users/getz/Developer/Rust/kahansum/src/main.rs" . 1024)
+ ("/Users/getz/Documents/Courses/FAFA01/Lectures/"
+  (dired-filename . "/Users/getz/Documents/Courses/FAFA01"))
+ ("/Users/getz/Developer/wio/view.c" . 4277)
+ ("/Users/getz/Developer/cheribsd/sys/amd64/amd64/bpf_jit_machdep.c" . 4243)
+ ("/Users/getz/Developer/cheribsd/sys/cheri/cheri.h" . 5228)
+ ("/Users/getz/Developer/cheribsd/sys/cheri/cheri_exec.c" . 3302)
+ ("/Users/getz/Developer/Shit/params/test.c" . 115)
+ ("/Users/getz/Developer/Rust/kahansum/Cargo.toml" . 198)
+ ("/Users/getz/Developer/Rust/kahansum/"
+  (dired-filename . "/Users/getz/Developer/Rust/kahansum/target"))
+ ("/Users/getz/Documents/Courses/kursplanmaster.md" . 106)
+ ("/Users/getz/Developer/rustlings/exercises/strings/strings3.rs" . 373)
+ ("/Users/getz/Developer/rustlings/exercises/strings/strings4.rs" . 472)
+ ("/Users/getz/Developer/rustlings/exercises/modules/modules1.rs" . 264)
+ ("/Users/getz/Developer/rustlings/exercises/modules/modules2.rs" . 364)
+ ("/Users/getz/Developer/rustlings/exercises/hashmaps/README.md" . 343)
+ ("/Users/getz/Developer/rustlings/exercises/hashmaps/hashmaps1.rs" . 511)
+ ("/Users/getz/Developer/rustlings/exercises/hashmaps/hashmaps2.rs" . 529)
+ ("/Users/getz/Developer/rustlings/exercises/enums/enums3.rs" . 344)
+ ("/Users/getz/Developer/rustlings/exercises/strings/strings1.rs" . 161)
+ ("/Users/getz/Developer/rustlings/exercises/strings/strings2.rs" . 165)
+ ("/Users/getz/Developer/rustlings/exercises/strings/"
+  (dired-filename . "/Users/getz/Developer/rustlings/exercises/strings/strings4.rs"))
+ ("/Users/getz/Developer/rustlings/exercises/enums/"
+  (dired-filename . "/Users/getz/Developer/rustlings/exercises/enums/enums3.rs"))
+ ("/Users/getz/.config/spacebar/scripts/shell-output.sh" . 112)
+ ("/Users/getz/.config/spacebar/scripts/"
+  (dired-filename . "/Users/getz/.config/spacebar/scripts/shell-output.sh"))
+ ("/Users/getz/.config/spacebar/spacebarrc" . 1942)
+ ("/Users/getz/.config/spacebar/"
+  (dired-filename . "/Users/getz/.config/spacebar/spacebarrc.bak"))
+ ("/Users/getz/.config/spacebar/spacebarrc.bak" . 2470)
+ ("/Users/getz/Developer/rustlings/exercises/structs/README.md" . 17)
+ ("/Users/getz/Developer/rustlings/exercises/structs/structs2.rs" . 872)
+ ("/Users/getz/Developer/rustlings/exercises/move_semantics/move_semantics4.rs" . 339)
+ ("/Users/getz/Developer/rustlings/exercises/move_semantics/"
+  (dired-filename . "/Users/getz/Developer/rustlings/exercises/move_semantics/move_semantics4.rs"))
+ ("/Users/getz/Developer/rustlings/exercises/variables/variables4.rs" . 238)
+ ("/Users/getz/Developer/rustlings/exercises/move_semantics/move_semantics2.rs" . 230)
+ ("/Users/getz/Developer/rustlings/exercises/move_semantics/move_semantics3.rs" . 243)
+ ("/Users/getz/Developer/rustlings/exercises/move_semantics/move_semantics5.rs" . 232)
+ ("/Users/getz/Developer/rustlings/exercises/move_semantics/move_semantics6.rs" . 493)
+ ("/Users/getz/.emacs.d/.cache/treemacs-persist" . 31)
+ ("/Users/getz/Developer/rustlings/exercises/vecs/vecs1.rs" . 145)
+ ("/Users/getz/Developer/rustlings/exercises/vecs/vecs2.rs" . 524)
+ ("/Users/getz/Developer/rustlings/exercises/move_semantics/move_semantics1.rs" . 220)
+ ("/Users/getz/Developer/rustlings/exercises/primitive_types/primitive_types2.rs" . 552)
+ ("/Users/getz/Developer/rustlings/exercises/primitive_types/"
+  (dired-filename . "/Users/getz/Developer/rustlings/exercises"))
+ ("/Users/getz/Developer/rustlings/exercises/if/"
+  (dired-filename . "/Users/getz/Developer/rustlings/exercises/if/if2.rs"))
+ ("/Users/getz/Developer/rustlings/exercises/if/if2.rs" . 35)
+ ("/Users/getz/Developer/rustlings/exercises/quiz1.rs" . 679)
+ ("/Users/getz/Developer/rustlings/exercises/variables/variables1.rs" . 124)
+ ("/Users/getz/Developer/rustlings/exercises/variables/variables2.rs" . 104)
+ ("/Users/getz/Developer/rustlings/exercises/variables/variables3.rs" . 168)
+ ("/Users/getz/Developer/rustlings/exercises/variables/variables6.rs" . 127)
+ ("/Users/getz/Developer/rustlings/exercises/variables/variables5.rs" . 104)
+ ("/Users/getz/Developer/rustlings/exercises/primitive_types/primitive_types5.rs" . 248)
+ ("/Users/getz/Developer/rustlings/exercises/primitive_types/primitive_types6.rs" . 271)
+ ("/Users/getz/Developer/rustlings/exercises/primitive_types/primitive_types4.rs" . 188)
+ ("/Users/getz/Developer/rustlings/exercises/primitive_types/primitive_types3.rs" . 211)
+ ("/Users/getz/.emacs.d/elpa/tree-sitter-20220212.1632/tree-sitter-autoloads.el" . 8995)
+ ("/Users/getz/.emacs.d/elpa/tsc-20220212.1632/tsc-autoloads.el" . 625)
+ ("/Users/getz/Developer/AdvancedUPE/apue-code/05/gdb-examples/main.c" . 777)
+ ("/Users/getz/Developer/rustlings/src/"
+  (dired-filename . "/Users/getz/Developer/rustlings/src/main.rs"))
+ ("/Users/getz/Developer/rustlings/src/main.rs" . 601)
+ ("/Users/getz/.emacs.d/elpa/flycheck-20230306.414/flycheck-autoloads.el" . 11131)
+ ("/Users/getz/Developer/rustlings/exercises/variables/"
+  (dired-filename . "/Users/getz/Developer/rustlings/exercises"))
+ ("/Users/getz/Developer/rustlings/exercises/intro/"
+  (dired-filename . "/Users/getz/Developer/rustlings/exercises"))
+ ("/Users/getz/Developer/rustlings/exercises/functions/functions2.rs" . 104)
+ ("/Users/getz/Developer/rustlings/exercises/functions/functions3.rs" . 104)
+ ("/Users/getz/Developer/rustlings/exercises/functions/functions4.rs" . 429)
+ ("/Users/getz/Developer/rustlings/exercises/functions/functions5.rs" . 104)
+ ("/Users/getz/Developer/rustlings/exercises/if/if1.rs" . 90)
+ ("/Users/getz/Developer/AdvancedUPE/apue-code/05/"
+  (dired-filename . "/Users/getz/Developer/AdvancedUPE/apue-code/05/gdb-examples"))
+ ("/Users/getz/Developer/rustlings/exercises/README.md" . 1213)
+ ("/Users/getz/Developer/rustlings/flake.nix" . 1068)
+ ("/Users/getz/Developer/rustlings/flake.lock" . 293)
+ ("/Users/getz/Developer/rustlings/exercises/functions/"
+  (dired-filename . "/Users/getz/Developer/rustlings/exercises/functions/functions1.rs"))
+ ("/Users/getz/Developer/rustlings/exercises/intro/intro2.rs" . 144)
+ ("/Users/getz/Developer/rustlings/exercises/intro/intro1.rs" . 623)
+ ("/ssh:envs:/home/getz/crackmes/"
+  (dired-filename . "/ssh:envs:/home/getz"))
+ ("/ssh:envs:/home/getz/public_gopher/"
+  (dired-filename . "/ssh:envs:/home/getz/public_gopher/gophermap"))
+ ("/ssh:lucifer:/home/getz/"
+  (dired-filename . "/ssh:lucifer:/home/getz/Pictures"))
+ ("/ssh:lucifer:/home/getz/faq" . 96)
+ ("/ssh:netbsd:/home/getz/apue-code/03/chown.c" . 1457)
+ ("/Users/getz/.ssh/"
+  (dired-filename . "/Users/getz"))
+ ("/Users/getz/Nextcloud/Programming/C/Fahrenheit/fahr2.c" . 147)
+ ("/Users/getz/Nextcloud/Programming/C/Fahrenheit/"
+  (dired-filename . "/Users/getz/Nextcloud/Programming/C/Fahrenheit/fahr2.c"))
+ ("/Users/getz/Nextcloud/Programming/C/"
+  (dired-filename . "/Users/getz/Nextcloud/Programming"))
+ ("/Users/getz/Nextcloud/Programming/"
+  (dired-filename . "/Users/getz/Nextcloud/Programming/C"))
+ ("/Users/getz/Documents/Courses/Github/Reference_Material-Equation_Sheets/C_Primer.tex" . 2799)
+ ("/Users/getz/Library/Caches/Firefox/Profiles/4lhkwttt.default-release/chrome/userChrome.css" . 268)
+ ("/Users/getz/Library/Application Support/Firefox/Profiles/4lhkwttt.default-release/chrome/userChrome.css" . 428)
+ ("/Users/getz/Nextcloud/Programming/C/EffectiveC/"
+  (dired-filename . "/Users/getz/Nextcloud/Programming/C")))

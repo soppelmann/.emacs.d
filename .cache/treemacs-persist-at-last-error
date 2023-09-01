@@ -1,0 +1,6 @@
+# State when last error occurred on 2023-08-30 15:25:41
+# Error was (args-out-of-range #s(treemacs-workspace Default (#s(treemacs-project PianobarNowPlayable /Users/getz/Developer/git/PianobarNowPlayable/PianobarNowPlayable local-readable nil))) 3)
+
+* Default
+** PianobarNowPlayable
+ - path :: ~/Developer/git/PianobarNowPlayable/PianobarNowPlayable

@@ -1,0 +1,24 @@
+ls
+clear
+ls
+ff
+pwd
+cd .emacs.d/eshell/
+ls
+mv aliases alias
+ls
+ff
+ff
+cc
+ccc
+zsh
+ls
+clear
+ls
+cd .emacs.d/
+ls
+mkdir desktops
+ff
+l
+ls
+ls
