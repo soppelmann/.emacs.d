@@ -59,7 +59,7 @@
 (load-theme 'modus-vivendi-tinted t)
 
 ;; Backup and Autosave Directories
-(setq temporary-file-directory "~/.tmp/")
+(setq temporary-file-directory "~/.emacs.d/tmp")
 (setq backup-directory-alist `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
 

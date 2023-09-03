@@ -4,7 +4,7 @@
 
 (setq dashboard-footer-messages
       (with-temp-buffer
-        (insert-file-contents "/Users/getz/.emacs.d/theo")
+        (insert-file-contents "~/.emacs.d/theo")
         (split-string (buffer-string) "\n" t)))
 
 (setq dashboard-item-shortcuts
