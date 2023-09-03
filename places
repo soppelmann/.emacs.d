@@ -1,21 +1,24 @@
 ;;; -*- coding: utf-8; mode: lisp-data -*-
-(("/home/getz/.emacs.d/"
-  (dired-filename . "/home/getz/.emacs.d/.."))
- ("/home/getz/.emacs.d/elpa/denote-1.2.0/denote.info" . 145096)
- ("/home/getz/.emacs.d/init.el" . 1810)
+(("/home/getz/Development/EDAF80/code/src/EDAF80/assignment1.cpp" . 13360)
+ ("/home/getz/.emacs.d/init.el" . 1739)
+ ("/home/getz/Development/EDAF80/code/src/EDAF80/"
+  (dired-filename . "/home/getz/Development/EDAF80/code/src/EDAF80/CelestialBody.hpp"))
+ ("/home/getz/Development/EDAF80/code/src/EDAF80/CelestialBody.hpp" . 2688)
+ ("/home/getz/Development/EDAF80/code/src/"
+  (dired-filename . "/home/getz/Development/EDAF80/code/src/EDAF80"))
  ("/home/getz/"
-  (dired-filename . "/home/getz/Development"))
+  (dired-filename . "/home/getz/.bashrc"))
+ ("/home/getz/.bashrc" . 147)
+ ("/home/"
+  (dired-filename . "/home/getz"))
  ("/home/getz/Development/"
   (dired-filename . "/home/getz/Development/EDAF80"))
+ ("/home/getz/.emacs.d/"
+  (dired-filename . "/home/getz/.emacs.d/.."))
  ("/home/getz/Development/EDAF80/"
   (dired-filename . "/home/getz/Development/EDAF80/code"))
  ("/home/getz/Development/EDAF80/code/"
   (dired-filename . "/home/getz/Development/EDAF80/code/src"))
- ("/home/getz/Development/EDAF80/code/src/"
-  (dired-filename . "/home/getz/Development/EDAF80/code/src/EDAF80"))
- ("/home/getz/Development/EDAF80/code/src/EDAF80/"
-  (dired-filename . "/home/getz/Development/EDAF80/code/src/EDAF80/assignment1.cpp"))
- ("/home/getz/Development/EDAF80/code/src/EDAF80/assignment1.cpp" . 175)
  ("/"
   (dired-filename . "/Users"))
  ("/bin/"

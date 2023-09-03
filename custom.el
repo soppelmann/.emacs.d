@@ -93,7 +93,7 @@
       (null-device . "/dev/null"))))
  '(helm-minibuffer-history-key "M-p")
  '(package-selected-packages
-   '(ripgrep diff-hl projectile cmake-project cmake-mode company-glsl glsl-mode multi-vterm vterm markdown-mode counsel-etags multi-term ranger denote elisp-autofmt exec-path-from-shell visual-regexp tree-sitter-langs yasnippet which-key treemacs-tab-bar vi-tilde-fringe consult dashboard geiser-racket dired-sidebar fontaine flycheck vertico general dimmer eglot orderless ef-themes ox-rfc doom-themes rainbow-delimiters evil-collection move-text paredit nlinum-hl benchmark-init fill-column-indicator company counsel-tramp modus-themes rust-mode)))
+   '(evil-collecion geiser-racket vertico-p vertic ivy counsel evil geiser ripgrep diff-hl projectile cmake-project cmake-mode company-glsl glsl-mode multi-vterm vterm markdown-mode counsel-etags multi-term ranger denote elisp-autofmt exec-path-from-shell visual-regexp tree-sitter-langs yasnippet which-key treemacs-tab-bar vi-tilde-fringe consult dashboard dired-sidebar fontaine flycheck vertico general dimmer eglot orderless ef-themes ox-rfc doom-themes rainbow-delimiters evil-collection move-text paredit nlinum-hl benchmark-init fill-column-indicator company counsel-tramp modus-themes rust-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

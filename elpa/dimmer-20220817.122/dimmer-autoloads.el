@@ -5,7 +5,7 @@
 
 ;;; Code:
 
-(add-to-list 'load-path (or (and load-file-name (file-name-directory load-file-name)) (car load-path)))
+(add-to-list 'load-path (or (and load-file-name (directory-file-name (file-name-directory load-file-name))) (car load-path)))
 
 
 
@@ -72,7 +72,6 @@ it is disabled.
 (fn &optional ARG)" t)
 (define-obsolete-function-alias 'dimmer-activate 'dimmer-mode "0.2.0")
 (register-definition-prefixes "dimmer" '("dimmer-"))
-
 
 ;;; End of scraped data
 

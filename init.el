@@ -56,7 +56,10 @@
 ;; Load theme after custom.el to emacs wont freak out
 ;;(load-theme 'ef-light t)
 ;;(load-theme 'modus-operandi t)
-(load-theme 'modus-vivendi-tinted t)
+(when (require 'modus-themes nil 'noerror)
+(load-theme 'modus-vivendi t)
+  )
+
 
 ;; Backup and Autosave Directories
 (setq temporary-file-directory "~/.emacs.d/tmp")
@@ -132,6 +135,22 @@ position of the outside of the paren.  Otherwise return nil."
 
 
 ;; Packages
+(use-package
+ evil
+ :ensure t
+ :init (setq evil-want-keybinding nil)
+ )
+(use-package
+ evil-collection
+ :after evil
+ :ensure t
+ :config (evil-collection-init))
+
+(use-package vertico
+  :ensure t
+  :init
+    (vertico-mode)
+    )
 
 ;; markdown-mode
 (use-package markdown-mode
@@ -176,6 +195,7 @@ position of the outside of the paren.  Otherwise return nil."
 (setq ranger-show-hidden t)
 (setq ranger-cleanup-on-disable t)
 
+(use-package diff-hl :ensure t)
 (use-package multi-term :ensure t)
 
 ;; Dashboard
@@ -192,8 +212,8 @@ position of the outside of the paren.  Otherwise return nil."
 (use-package rainbow-delimiters :ensure t)
 
 ;; Geiser for LISP
-(use-package geiser :ensure t)
-(use-package geiser-racket :ensure t)
+;;(use-package geiser :ensure t)
+;(use-package geiser-racket :ensure t)
 
 ;; Enable Paredit.
 ;(add-hook 'emacs-lisp-mode-hook 'enable-paredit-mode)
@@ -228,20 +248,8 @@ position of the outside of the paren.  Otherwise return nil."
 (use-package visual-regexp :ensure t)
 
 ;; evil
-(use-package
- evil
- :ensure t
- :init (setq evil-want-keybinding nil)
- ;(evil-mode)
- )
-
 ;(add-hook 'prog-mode-hook 'evil-local-mode)
 
-(use-package
- evil-collection
- :after evil
- :ensure t
- :config (evil-collection-init))
 
 (global-set-key [remap evil-quit] 'kill-buffer-and-window)
 (evil-set-undo-system 'undo-redo)
@@ -391,12 +399,9 @@ position of the outside of the paren.  Otherwise return nil."
 (which-key-mode)
 
 ;; Completion framework
-(unless (package-installed-p 'vertico)
-  (package-install 'vertico))
-
 ;; Enable completion by narrowing
 ;; M-x etc..
-(vertico-mode t)
+
 
 ;; Optionally use the `orderless' completion style.
 (use-package
@@ -408,8 +413,12 @@ position of the outside of the paren.  Otherwise return nil."
   completion-category-overrides '((file (styles partial-completion)))))
 
 ;;; Extended completion utilities
-(unless (package-installed-p 'consult)
-  (package-install 'consult))
+(use-package consult
+    :hook (completion-list-mode . consult-preview-at-point-mode)
+    :init
+    :config
+    )
+
 (global-set-key [rebind switch-to-buffer] #'consult-buffer)
 (setq
  read-buffer-completion-ignore-case t
@@ -466,8 +475,7 @@ position of the outside of the paren.  Otherwise return nil."
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
 
 ;;; LSP Support
-(unless (package-installed-p 'eglot)
-  (package-install 'eglot))
+(use-package eglot :ensure t)
 (setq eldoc-echo-area-use-multiline-p nil)
 
 (setq lsp-eldoc-enable-hover nil)

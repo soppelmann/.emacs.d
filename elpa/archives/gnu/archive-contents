@@ -1311,7 +1311,7 @@
 		   ("Magnar Sveen" . "magnars@gmail.com"))
 		  (:keywords "marking" "region"))])
  (expreg .
-	 [(1 1 0)
+	 [(1 2 1)
 	  ((emacs
 	    (29 1)))
 	  "Simple expand region" tar
@@ -1320,7 +1320,7 @@
 	   (:maintainer "Yuan Fu" . "casouri@gmail.com")
 	   (:authors
 	    ("Yuan Fu" . "casouri@gmail.com"))
-	   (:commit . "4fc82bbaafacbd3456cdf401f0b45c5203bd0a9d"))])
+	   (:commit . "b9fd9f90c6f00b628a610e556d560d5719a92d7d"))])
  (external-completion .
 		      [(0 1)
 		       nil "Let external tools control completion style" tar
@@ -2509,7 +2509,7 @@
 	       ("Omar Antolín Camarena" . "omar@matem.unam.mx"))
 	      (:commit . "847694e78c12d903d5e3f6cb365a5d3b984db537"))])
  (org .
-      [(9 6 8)
+      [(9 6 9)
        ((emacs
 	 (26 1)))
        "Outline-based notes management and organizer" tar
@@ -2518,7 +2518,7 @@
 	(:maintainer "Bastien Guerry" . "bzg@gnu.org")
 	(:authors
 	 ("Carsten Dominik" . "carsten.dominik@gmail.com"))
-	(:commit . "19a1a5024bef3163737fa6f2b71dd9d4437dc31f"))])
+	(:commit . "806abc5a2bbcb5f884467a0145547221ba09eb59"))])
  (org-contacts .
 	       [(1 1)
 		((emacs
@@ -3690,7 +3690,7 @@
 	      ("Trevor Edwin Pogue" . "trevor.pogue@gmail.com"))
 	     (:commit . "33c2a6f0a11d1d88cdb2065c5a897e33507f4c86"))])
  (tramp .
-	[(2 6 1 1 1)
+	[(2 6 1 2)
 	 ((emacs
 	   (26 1)))
 	 "Transparent Remote Access, Multiple Protocol" tar
@@ -3699,7 +3699,7 @@
 	  (:maintainer "Michael Albinus" . "michael.albinus@gmx.de")
 	  (:authors
 	   ("Kai Großjohann" . "kai.grossjohann@gmx.net"))
-	  (:commit . "83345a2c2468c37ac4ef396c6a0350b7ccbf6b4f"))])
+	  (:commit . "382733d64116368ad50e6fbdb848357e9ce1c72d"))])
  (tramp-nspawn .
 	       [(1 0 1)
 		((emacs
@@ -3842,7 +3842,7 @@
 		   (:url . "https://elpa.gnu.org/packages/uniquify-files.html")
 		   (:commit . "1d76b4f0e283afaff2be053d85f8726ffc3abd6e"))])
  (urgrep .
-	 [(0 1 1)
+	 [(0 2 0)
 	  ((emacs
 	    (27 1))
 	   (compat
@@ -3852,10 +3852,7 @@
 	  "Universal recursive grep" tar
 	  ((:url . "https://github.com/jimporter/urgrep")
 	   (:keywords "grep" "search")
-	   (:maintainer "Jim Porter")
-	   (:authors
-	    ("Jim Porter"))
-	   (:commit . "1924e175a52a9aecc2dd1e1339d0a063fbb398f1"))])
+	   (:commit . "4a034d9b2ec90fcdbd1d4539c1bfb9555020f0e3"))])
  (url-http-ntlm .
 		[(2 0 4)
 		 ((cl-lib
