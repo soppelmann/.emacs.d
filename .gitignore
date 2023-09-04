@@ -1,3 +1,8 @@
 /elpa/
 /elpa/*
+/auto-save-list/
+/auto-save-list/*
 /saves/*
+recentf
+projectile-bookmarks.eld
+places
