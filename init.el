@@ -196,7 +196,7 @@ position of the outside of the paren.  Otherwise return nil."
 (setq ranger-cleanup-on-disable t)
 
 (use-package diff-hl :ensure t)
-(use-package multi-term :ensure t)
+(use-package multi-vterm :ensure t)
 
 ;; Dashboard
 (use-package dashboard :ensure t :config (load "~/.emacs.d/my-dashboard.el"))
