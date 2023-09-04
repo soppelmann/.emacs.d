@@ -182,8 +182,8 @@ position of the outside of the paren.  Otherwise return nil."
   ;(other-window 1)
   (split-window)
   (other-window 1)
-  (multi-vterm)
-  ;(eshell)
+ ; (multi-vterm)
+  (eshell)
   (other-window -3)
   (setq grb-temporary-window (nth 2 (window-list)))
   (setq special-display-function #'grb-special-display))
@@ -196,7 +196,7 @@ position of the outside of the paren.  Otherwise return nil."
 (setq ranger-cleanup-on-disable t)
 
 (use-package diff-hl :ensure t)
-(use-package multi-vterm :ensure t)
+;;(use-package multi-vterm :ensure t)
 
 ;; Dashboard
 (use-package dashboard :ensure t :config (load "~/.emacs.d/my-dashboard.el"))
