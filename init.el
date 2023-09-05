@@ -508,6 +508,51 @@ position of the outside of the paren.  Otherwise return nil."
 ;               )
 ;(add-hook 'after-init-hook #'global-flycheck-mode)
 
+
+(defun verilog-eglot-hook ()
+  (company-mode)
+  (yas-minor-mode 1)
+  (eglot-ensure)
+  ;(add-to-list 'eglot-server-programs '(verilog-mode . ("svls"))))
+  (add-to-list 'eglot-server-programs '(verilog-mode . ("vls"))))
+(add-hook 'verilog-mode-hook 'verilog-eglot-hook)
+
+(use-package verilog-ext
+  :ensure t
+  :after verilog-mode
+  :demand
+  :hook ((verilog-mode . verilog-ext-mode))
+  :init
+   ;;  - Verilog Ext Feature List (provides info of different features)
+   ;; Comment out/remove the ones you do not need
+  (setq verilog-ext-feature-list
+        '(font-lock
+          xref
+          capf
+          hierarchy
+          eglot
+          lsp
+          flycheck
+          beautify
+          navigation
+          template
+          formatter
+          compilation
+          imenu
+          which-func
+          hideshow
+          typedefs
+          time-stamp
+          block-end-comments
+          company-keywords
+          ports))
+  :config
+  (verilog-ext-mode-setup))
+
+(use-package verilog-ts-mode
+  :ensure t
+  :mode (("\\.s?vh?\\'" . verilog-ts-mode)))
+
 ;;; Pop-up auto-completion
 
 (use-package
